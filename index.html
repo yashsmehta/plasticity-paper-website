@@ -1,42 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200x630 -->
+  <meta property="og:image" content="static/images/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200x600 -->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="synaptic plasticity, machine learning, deep learning, neural networks, inference, Bayesian, probabilistic, model-based, synaptic plasticity rules, synaptic plasticity inference, synaptic plasticity learning, synaptic plasticity machine learning, synaptic plasticity deep learning, synaptic plasticity neural networks, synaptic plasticity inference, synaptic plasticity Bayesian, synaptic plasticity probabilistic, synaptic plasticity model-based">
+  <!-- Keywords for your paper to be indexed by -->
+  <meta name="keywords"
+    content="synaptic plasticity, machine learning, deep learning, neural networks, inference, Bayesian, probabilistic, model-based, synaptic plasticity rules, synaptic plasticity inference, synaptic plasticity learning, synaptic plasticity machine learning, synaptic plasticity deep learning, synaptic plasticity neural networks, synaptic plasticity inference, synaptic plasticity Bayesian, synaptic plasticity probabilistic, synaptic plasticity model-based">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>Model-Based Inference of Synaptic Plasticity Rules</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
+  <!-- Include external CSS files -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <!-- Include MathJax for rendering equations -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Include additional CSS styles -->
+  <style>
+    body {
+      font-family: 'Noto Sans', Arial, sans-serif;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 1px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      text-align: left;
+      margin-top: 2px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .math {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 40px;
+    }
+
+    ol {
+      margin-left: 40px;
+    }
+
+    img {
+      display: block;
+      margin: 40px auto;
+      max-width: 95%;
+      height: auto;
+    }
+
+    em {
+      font-style: italic;
+    }
+  </style>
+
+  <!-- Include external JS files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -44,6 +99,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
 
@@ -88,9 +144,8 @@
               </span>
             </div>
 
-            <!-- New NeurIPS logo and text -->
             <div class="column has-text-centered">
-              <div style="font-weight: bold; margin-top: 12px;">NeurIPS 2024</div>
+              <div style="font-weight: bold; margin-top: 13px;">NeurIPS 2024</div>
             </div>
 
             <div class="column has-text-centered">
@@ -106,17 +161,6 @@
                   </a>
                 </span>
 
-                <!-- Supplementary PDF link -->
-                <span class="link-block">
-                  <a href="static/pdfs/supplementary.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Supplementary</span>
-                  </a>
-                </span>
-
                 <!-- Github link -->
                 <span class="link-block">
                   <a href="https://github.com/yashsmehta/MetaLearnPlasticity" target="_blank"
@@ -125,6 +169,17 @@
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Twitter link -->
+                <span class="link-block">
+                  <a href="https://twitter.com/your_twitter_handle" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                    <span>Twitter</span>
                   </a>
                 </span>
 
@@ -138,6 +193,17 @@
                     <span>arXiv</span>
                   </a>
                 </span>
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
               </div>
             </div>
           </div>
@@ -145,3 +211,295 @@
       </div>
     </div>
   </section>
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Inferring the synaptic plasticity rules that govern learning in the brain is a key challenge in neuroscience. We
+            present a novel computational method to infer these
+            rules from experimental data, applicable to both neural and behavioral data. Our
+            approach approximates plasticity rules using a parameterized function, employing
+            either truncated Taylor series for theoretical interpretability or multilayer perceptrons. These plasticity parameters
+            are optimized via gradient descent over entire
+            trajectories to align closely with observed neural activity or behavioral learning
+            dynamics. This method can uncover complex rules that induce long nonlinear time
+            dependencies, particularly involving factors like postsynaptic activity and current
+            synaptic weights. We validate our approach through simulations, successfully recovering
+            established rules such as Oja’s, as well as more intricate plasticity rules
+            with reward-modulated terms. We assess the robustness of our technique to noise
+            and apply it to behavioral data from Drosophila in a probabilistic reward-learning
+            experiment. Notably, our findings reveal an active forgetting component in reward
+            learning in flies, improving predictive accuracy over previous models. This modeling framework offers a promising new
+            avenue for elucidating the computational
+            principles of synaptic plasticity and learning in the brain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Introduction -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Synapses, the connections between neurons, play a crucial role in the brain's ability to learn and remember. This process, known as synaptic plasticity, involves changes in the strength of these connections. Despite its importance, fully understanding and quantifying synaptic plasticity remains a significant challenge in neuroscience. To describe plasticity mathematically, it is often modeled as a local function. Among the well-known and widely studied plasticity rules are Hebbian learning and Oja's rule, which provide foundational insights into how synaptic changes can support learning processes.
+          </p>
+        </div>
+        <div class="image-container" style="width: 100%; margin: 0 auto;">
+          <object data="static/images/intro_fig.png" type="image/png" style="width: 100%; height: auto;">
+            <p>It appears you don't have an SVG plugin for this browser. You can <a href="static/images/intro_fig.png">click here to download the PNG file.</a></p>
+          </object>
+          <p>
+            Synaptic plasticity can be expressed as a Taylor series function with local parameters at the synapse: <b>x</b> (presynaptic activity), <b>y</b> (postsynaptic activity), and <b>w</b> (current synaptic weight). The goal is to learn the parameters of this Taylor series to accurately model synaptic changes. Popular forms of plasticity, such as Hebbian learning (<b>x</b>.<b>y</b>) and Oja's rule (<b>x</b>.<b>y</b> - <b>y</b>^2.<b>w</b>), are specific instances of this broader plasticity function characterization.
+          </p>
+          <div style="text-align: center;">
+            <object data="static/images/equation.png" type="image/png" style="width: 50%; height: auto;">
+              <p>It appears you don't have an SVG plugin for this browser. You can <a href="static/images/equation.png">click here to download the PNG file.</a></p>
+            </object>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Method -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <div class="content">
+              <h1 class="title">Method</h1>
+
+              <p>Our aim is to understand how learning occurs in the brain by analyzing neural activity or behavior as an animal interacts with its environment. Specifically, we seek to derive a function that describes how synaptic weights—the connections between neurons—change based on biological factors. To simplify the analysis, we focus on a single layer within a neural network, characterized by the following:</p>
+
+              <ul>
+                <li><strong>Neuronal Activity Generation</strong>: The input to the layer, \( \mathbf{x}(t) \), produces neuronal activity \( \mathbf{y}(t) \) through a weighted process involving the synaptic weights \( \mathbf{W}(t) \).</li>
+                <li><strong>Weight Update Rule</strong>: The weights \( \mathbf{W}(t) \) are updated using a biologically inspired rule \( g_\theta \) that depends on parameters \( \theta \), neuronal activities, current weights, and a global reward signal \( r(t) \).</li>
+              </ul>
+
+              <p>The weight update is calculated as:</p>
+
+              <p class="math">\[
+              \Delta w_{ij}(t) = g_\theta\left( x_j(t), y_i(t), w_{ij}(t), r(t) \right)
+              \]</p>
+
+              <p>If direct observation of neuronal activity \( \mathbf{y}(t) \) is not possible, we employ a "readout" function \( f \) to compute observable variables \( \mathbf{m}(t) \) that summarize the activity.</p>
+
+              <p>To optimize the rule \( g_\theta \) using real or simulated data, we follow these steps:</p>
+
+              <ol>
+                <li><strong>Model Output Generation</strong>: Generate a time series of outputs \( \mathbf{m}(t) \) from inputs \( \mathbf{x}(t) \) using our model.</li>
+                <li><strong>Loss Calculation</strong>: Compare the model output \( \mathbf{m}(t) \) to experimental data \( \mathbf{o}(t) \) and compute a loss function \( L \) that quantifies the difference between them.</li>
+                <li><strong>Parameter Optimization</strong>: Adjust the parameters \( \theta \) of the rule \( g_\theta \) using backpropagation and stochastic gradient descent to minimize the loss \( L \).</li>
+              </ol>
+
+              <p>Our objective is to align the model's predictions closely with real data, allowing us to infer the biological rules underlying learning. In our experiments, we analyze how effectively the model recovers known learning rules under different conditions, such as varying levels of noise or sparsity in neural data.</p>
+
+              <p>This approach enables us to explore neuronal adaptation and the mechanisms of learning in both simulated and real-world scenarios.</p>
+
+              <!-- Include the SVG image -->
+              <img src="static/images/fig1.svg" alt="Schematic overview of the proposed method">
+
+              <p class="subtitle"><em>Figure: Schematic overview of the proposed method. Animal-derived time-series data (yellow) and a plasticity-regulated <em>in silico</em> model (blue) generate trajectories \( \mathbf{o}^t \) and \( \mathbf{m}^t \). A loss function quantifies trajectory mismatch to produce a gradient, enabling the inference of the synaptic plasticity rule \( g_\theta \).</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End single image SVG -->
+
+
+<!-- Neural Activity -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <div class="content">
+              <h1 class="title">Inferring a plasticity rule from neural activity</h1>
+
+              <p>To understand how our method works with neural activity data, we simulated neural outputs from a simple feedforward network that learns using Oja's rule, a well-known learning rule in neuroscience. In this network, synaptic weights are updated at each time step based on the activities of the pre- and post-synaptic neurons and the current synaptic weight:</p>
+
+              <p class="math">\[
+              \Delta w_{ij} = x_j y_i - y_i^2 w_{ij}
+              \]</p>
+
+              <p>Our goal was to see if we could infer this plasticity rule using only the observed neural activities. We used a model network with the same structure as the original (ground-truth) network to keep things straightforward. In real biological systems, we might not know the exact network architecture, but matching them in our simulations helps us test our method's effectiveness.</p>
+
+              <p>To represent the plasticity rule in our model, we used a truncated Taylor series expansion:</p>
+
+              <p class="math">\[
+              g_\theta^{Taylor} = \sum_{\alpha, \beta, \gamma=0}^{2} \theta_{\alpha \beta \gamma} \, x_i^\alpha y_j^\beta w_{ij}^\gamma
+              \]</p>
+
+              <p>The coefficients \( \theta_{\alpha \beta \gamma} \) are parameters that the model learns. This flexible form allows the model to approximate various plasticity rules. Notably, Oja's rule fits into this framework by setting \( \theta_{110} = 1 \), \( \theta_{021} = -1 \), and all other \( \theta \) values to zero.</p>
+
+              <p>We trained the model by minimizing the mean squared error (MSE) between the neural activity trajectories from the ground-truth network and our model:</p>
+
+              <p class="math">\[
+              \ell_{MSE}(m(t), o(t)) = \|o(t) - m(t)\|^2
+              \]</p>
+
+              <p>\( o(t) \) represents the observed neural activities from the ground-truth network. \( m(t) \) is the model's output, which we set equal to the model's neuron activities \( y(t) \). The model successfully recovered the original plasticity rule (Oja's rule).</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Behavioral Data -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <div class="content">
+              <h1 class="title">Inferring a plasticity rule from behavioral data</h1>
+
+              <p>We extend our method to infer synaptic plasticity rules solely from behavioral data, which is advantageous since behavioral experiments are more accessible than direct neural measurements. To validate our approach, we simulate decision-making experiments where animals accept or reject stimuli, leading to rewards that induce synaptic changes based on an underlying plasticity rule.</p>
+
+              <p>Our network architecture mimics the mushroom body of the fruit fly, featuring a three-layer structure. The readout \( m(t) \) comprises binary decisions based on the output layer's average activity. A probabilistic reward \( R \in \{0, 1\} \) is assigned after each choice, acting as a global signal influencing synaptic plasticity.</p>
+
+              <p>Synaptic changes occur between the input and output layers, following a covariance-based learning rule:</p>
+
+              <p class="math">\[
+                \Delta w_{ij} = x_j \, (R - E[R]),
+              \]</p>
+
+              <p>where \( x_j \) is the presynaptic input, and \( r = R - E[R] \) is the deviation of the actual reward from its expected value \( E[R] \).</p>
+
+              <p>To infer the plasticity rule from behavior, we parameterize the plasticity function using either a truncated Taylor series or a multilayer perceptron (MLP):</p>
+
+              <p class="math">\[
+                g^\text{Taylor}_\theta = \sum_{\alpha,\beta,\gamma,\delta} \theta_{\alpha\beta\gamma\delta} \, x_j^\alpha \, y_i^\beta \, w_{ij}^\gamma \, r^\delta,
+              \]</p>
+              <p class="math">\[
+                g^\text{MLP}_\theta = \text{MLP}_\theta(x_j, y_i, w_{ij}, r).
+              \]</p>
+
+              <p>Training relies solely on binary decisions without access to synaptic weights or neural activity.</p>
+
+              <p>Despite this limitation, our method accurately recovers the underlying reward-based plasticity rule from behavioral data alone, as shown by high \( R^2 \) values and significant goodness of fit between the ground truth behavior and model predictions.</p>
+              <img src="static/images/fig2.svg" alt="Recovery of a reward-based plasticity rule from simulated behavior" style="width: 120%; height: auto;">
+              <p class="subtitle"><em>Figure: Recovery of a reward-based plasticity rule from simulated behavior</em></p>
+              <p class="subtitle"><em>(A) Models used to simulate behavior and infer plasticity rules. (B) Evolution of a single synaptic weight trained with \( g^\text{Taylor}_\theta \) and \( g^\text{MLP}_\theta \), compared to a known reward-based update rule. (C) \( R^2 \) distributions of weights across 10 seeds with varied initializations and stimulus encodings. (D) Training evolution of \( \theta \), highlighting \( \theta_{110} \) (ground truth value = 1) in red. (E) Final inferred \( \theta \) values across seeds, showing accurate identification of the relevant term. (F) Goodness of fit between ground truth behavior and model predictions, shown as percent deviance explained.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experimental Data -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <div class="content">
+              <h1 class="title">Fitting to experimental data</h1>
+
+              <p>We apply our method to the decision-making behavior of <em>Drosophila melanogaster</em>, extending our simulated results to biological data. Previous studies using logistic regression couldn't infer plasticity rules with recurrent dependencies like current synaptic weights; our approach overcomes this limitation.</p>
+
+              <p>In the experiment, flies choose between two odors in a Y-shaped arena. Each trial starts with the fly in clean air; the other arms contain different odors. A choice is recorded when the fly enters the "reward zone" of an odorized arm, and rewards are given probabilistically based on the chosen odor. Data from 18 flies show they develop preferences for odors with higher reward probabilities, adapting over time.</p>
+
+              <p>We investigate two plasticity rules: one based on reward and presynaptic activity, and another that includes current synaptic weight. Both models assign significant positive weights to the term involving presynaptic activity and reward. Our results indicate that the model with the weight-dependent term fits the observed behavior better, with the inferred learning rule assigning a negative value to the weight-dependent term. This suggests a weight-dependent decay mechanism at the synapses, aligning with observed forgetting rates where forgetting occurs over a longer timescale than learning.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe width="400" height="auto" src="https://www.youtube.com/embed/7xAOxv6UEmA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{metalearn-plasticity-2024,
+  title={Model-Based Inference of Synaptic Plasticity Rules},
+  author={Mehta, Yash and Tyulmankov, Danil and Rajgopalan, Adithya and Turner, Glenn and Fitzgerald, James and Funke, Jan},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS) 2024},
+  year={2024},
+  url={https://neurips.cc/},
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+              target="_blank">Academic Project Page Template</a> which was adopted from the <a
+              href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the
+            footer. <br> This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
